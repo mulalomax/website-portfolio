@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mamathuntsha Mulalo</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 20px;
+      right: 60px;
+      display: flex;
+      gap: 25px;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #0ff;
+      font-weight: bold;
+      font-size: 1.3em;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    nav a::after {
+      content: attr(data-hover);
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+      font-size: 0.8em;
+      color: #aaa;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #33ffff;
+    }
+
+    nav a:hover::after {
+      opacity: 1;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 40px 40px;
+      gap: 60px;
+      min-height: 100vh;
+    }
+
+    .text-section {
+      max-width: 600px;
+    }
+
+    .text-section h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .text-section h2 {
+      font-size: 1.8em;
+      color: #0ff;
+      margin-bottom: 20px;
+    }
+
+    .text-section p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #0ff;
+      color: #000;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      position: relative;
+    }
+
+    .download-btn::after {
+      content: "Download my resume";
+      position: absolute;
+      bottom: -25px;
+      left: 0;
+      font-size: 0.8em;
+      color: #aaa;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #33ffff;
+      transform: scale(1.05);
+    }
+
+    .download-btn:hover::after {
+      opacity: 1;
+    }
+
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .social-links a {
+      color: #0ff;
+      text-decoration: none;
+      font-size: 1.2em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #33ffff;
+    }
+
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 4px solid #0ff;
+      box-shadow: 0 0 20px #0ff;
+      background-color: #333;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('WhatsApp Image 2025-05-15 at 07.50.36.jpeg');
+      position: relative;
+    }
+
+    .profile-pic::after {
+      content: "Mamathuntsha Mulalo";
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.9em;
+      color: #aaa;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .profile-pic:hover::after {
+      opacity: 1;
+    }
+
+    section {
+      padding: 80px 60px;
+      border-top: 1px solid #444;
+      min-height: 60vh;
+    }
+
+    section h2 {
+      font-size: 2em;
+      color: #0ff;
+      margin-bottom: 15px;
+    }
+
+    section p, section ul {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #0ff;
+    }
+
+    a:hover {
+      color: redss;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home" >Home</a>
+    <a href="#services" >Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="container">
+    <div class="text-section">
+      <h1>Hello, I'm</h1>
+      <h2>Mamathuntsha Mulalo</h2>
+      <p>
+        A developer with a passion for clean code, interactive interfaces, and data-driven insights.
+        I blend front-end development with analytics to build smart, user-focused web experiences.
+      </p>
+      <a href="https://drive.google.com/file/d/1zoaV-xMdJgTAmSAnc90G6tNWxiPCqB8k/view?usp=drive_link" class="download-btn" download>Download CV</a>
+
+      <!-- Social Links -->
+      <div class="social-links">
+       
+        <a href="https://www.linkedin.com/in/mulalo-mamathuntshae78" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </div>
+    <div class="profile-pic"></div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>🚀 Services</h2>
+    <p>I offer tailored solutions combining web development and data analysis to help businesses grow efficiently and make informed decisions.</p>
+    <ul>
+      <li><strong>🌐 Custom Website Development:</strong> Clean, responsive websites built for performance and user experience.</li>
+      <li><strong>🛠 Web App Development:</strong> Scalable and dynamic web applications using modern frameworks like React and Node.js.</li>
+      <li><strong>📊 Data Analytics:</strong> Turn raw data into actionable insights using Python, SQL, and Excel.</li>
+      <li><strong>📈 Dashboard Development:</strong> Create real-time dashboards using Power BI, Tableau, or web-based tools.</li>
+      <li><strong>🔍 Data Cleaning & Automation:</strong> Clean and automate workflows using Python for better accuracy and speed.</li>
+    </ul>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>👋 About Me</h2>
+    <p>
+      Hello! I'm Mamathuntsha Mulalo, a passionate web developer and data analyst. I specialize in creating clean, functional websites and powerful data tools to help businesses thrive in the digital age. Whether it's building a responsive landing page or designing a custom dashboard, I love combining design with data to deliver smart, user-friendly solutions.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📬 Contact</h2>
+    <p>Feel free to reach out — I'm always open to new opportunities and collaborations!</p>
+    <ul>
+      <li><strong>📧 Email:</strong> <a href="mailto:mamathuntsha85@gmail.com">mamathuntsha85@gmail.com</a></li>
+      <li><strong>📞 Phone:</strong> 0711711714</li>
+      <li><strong>🔗 LinkedIn:</strong> <a href="https://www.linkedin.com/in/mulalo-mamathuntshae78" target="_blank">linkedin.com/in/mulalo-mamathuntshae78</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
+
